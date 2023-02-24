@@ -28,7 +28,4 @@ dependency-reduced-pom.xml
 *.ipr
 *.iws
 *.idea
-smart-visitor/
 log/
-visitor-component/Log/
-sync_log/
