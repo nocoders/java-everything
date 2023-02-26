@@ -628,3 +628,19 @@ docker run -p 9000:9000 \
 
 1. 
 
+## MySql安装
+
+### 日常命令
+
+```
+登录mysql
+docker exec -it 02f00b50c526 bash
+密码修改
+alter user 'root'@'localhost' identified by 'root';
+```
+
+
+
+### 参考链接
+
+1. [使用docker-compose的方式部署mysql](https://zhuanlan.zhihu.com/p/384330120)
