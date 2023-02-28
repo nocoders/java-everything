@@ -67,16 +67,22 @@ docker images |grep redis
 
 #### Compose命令
 
-##### 删除无效数据卷
+**删除无效数据卷**
 
 ```
 docker volume prune
 ```
 
-##### 查看日志
+**查看日志**
 
 ```
 docker-compose  logs -f
+```
+
+**重启某个服务**
+
+```
+ docker-compose -f ./docker-compose.yaml restart mall4cloud-nacos
 ```
 
 
@@ -637,6 +643,11 @@ docker run -p 9000:9000 \
 docker exec -it 02f00b50c526 bash
 密码修改
 alter user 'root'@'localhost' identified by 'root';
+设置远程可连接
+update user set host='%' where user ='root';
+FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'WITH GRANT OPTION;
+flush privileges;
 ```
 
 

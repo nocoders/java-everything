@@ -3,6 +3,6 @@ server:
 spring:
   data:
     redis:
-      host: localhost
+      host: 1.117.171.139
       database: 0
       port: 6379
