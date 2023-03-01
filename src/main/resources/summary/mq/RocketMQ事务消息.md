@@ -19,4 +19,3 @@ RocketMq提供的一种高级消息类型，支持在分布式场景下面保障
 ## 参考链接
 
 - [事务消息](https://rocketmq.apache.org/zh/docs/featureBehavior/04transactionmessage)
-- 
