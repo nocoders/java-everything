@@ -1,4 +1,4 @@
-package com.javaEverything.proxyModule.jdk;
+package com.javaEverything.designPattern.proxyModule.jdk;
 
 import java.lang.reflect.Proxy;
 

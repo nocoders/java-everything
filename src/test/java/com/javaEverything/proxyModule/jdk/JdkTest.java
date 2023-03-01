@@ -1,7 +1,8 @@
 package com.javaEverything.proxyModule.jdk;
 
-import com.javaEverything.proxyModule.Image;
-import com.javaEverything.proxyModule.RealImage;
+import com.javaEverything.designPattern.proxyModule.Image;
+import com.javaEverything.designPattern.proxyModule.RealImage;
+import com.javaEverything.designPattern.proxyModule.jdk.JDKProxy;
 import org.junit.Test;
 
 /**

@@ -1,6 +1,7 @@
 package com.javaEverything.proxyModule.CGLIB;
 
-import com.javaEverything.proxyModule.RealImage2;
+import com.javaEverything.designPattern.proxyModule.CGLIB.CGLIBProxy;
+import com.javaEverything.designPattern.proxyModule.RealImage2;
 import org.junit.Test;
 
 /**

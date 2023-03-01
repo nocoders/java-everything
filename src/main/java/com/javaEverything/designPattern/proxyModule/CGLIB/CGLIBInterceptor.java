@@ -1,4 +1,4 @@
-package com.javaEverything.proxyModule.CGLIB;
+package com.javaEverything.designPattern.proxyModule.CGLIB;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;

@@ -1,7 +1,7 @@
-package com.javaEverything.proxyModule.statics;
+package com.javaEverything.designPattern.proxyModule.statics;
 
-import com.javaEverything.proxyModule.Image;
-import com.javaEverything.proxyModule.RealImage;
+import com.javaEverything.designPattern.proxyModule.Image;
+import com.javaEverything.designPattern.proxyModule.RealImage;
 
 /**
  * @author linmeng
