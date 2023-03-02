@@ -144,7 +144,7 @@ HashMap(Map<? extends K, ? extends V> m)
 
 ### remove方法解析
 
-```
+```java
 /**
  * Implements Map.remove and related methods.
  *  找角标，找equals方法相同的两个key
