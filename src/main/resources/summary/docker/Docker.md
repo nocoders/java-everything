@@ -18,6 +18,14 @@ https://zhuanlan.zhihu.com/p/98982041
 docker version
 ```
 
+**Docker查看镜像源**
+
+```
+docker info|grep Mirrors -A 1
+```
+
+
+
 ##### Docker启动命令
 
 ```sh
@@ -83,6 +91,13 @@ docker-compose  logs -f
 
 ```
  docker-compose -f ./docker-compose.yaml restart mall4cloud-nacos
+```
+
+**删除后重启**
+
+```
+docker-compose down
+docker-compose up -d
 ```
 
 
@@ -640,18 +655,35 @@ docker run -p 9000:9000 \
 
 ```
 登录mysql
-docker exec -it 02f00b50c526 bash
+docker exec -it 02f00b50c526 env LANG=C.UTF-8 bash
 密码修改
-alter user 'root'@'localhost' identified by 'root';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
+查看用户信息
+select host,user,plugin,authentication_string from mysql.user;
 设置远程可连接
 update user set host='%' where user ='root';
 FLUSH PRIVILEGES;
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'WITH GRANT OPTION;
 flush privileges;
+取消主从复制
+
 ```
+
+### 问题
+
+1. **docker安装mysql，本地连接报错 Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'**
+   1. 
 
 
 
 ### 参考链接
 
 1. [使用docker-compose的方式部署mysql](https://zhuanlan.zhihu.com/p/384330120)
+1. [完美解决docker安装mysql后Navicat连接不上的问题](https://www.jb51.net/article/207911.htm)
+1. [Mysql取消主从复制](https://blog.csdn.net/mrbuffoon/article/details/105708418)
+
+## Nacos安装
+
+https://zhuanlan.zhihu.com/p/514584337
+
+### 
