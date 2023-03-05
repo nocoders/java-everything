@@ -1,5 +1,13 @@
 # 读写分离环境搭建
 
+电脑：MAC M1芯片
+
+docker版本：Docker desktop 4.16.2
+
+docker服务版本：20.10.22
+
+Mysql版本：8.0
+
 ## 历史镜像数据删除
 
 ```
